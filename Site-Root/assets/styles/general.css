@@ -1,0 +1,19 @@
+body {
+	min-width: 640px;
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+
+	font-family: "Nunito Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #787878
+
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
