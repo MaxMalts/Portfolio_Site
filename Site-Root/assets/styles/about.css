@@ -8,7 +8,7 @@
 }
 
 
-.about_content {
+.about__content {
 	width: 45.4%;
 	height: calc(419px - 2 * 100px);
 
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 1366px) {
-	.about_content {
+	.about__content {
 		width: 45.4%;
 		min-width: 350px;
 		height: calc(419px - 2 * 7.32vw);
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 410px) {
-	.about_content {
+	.about__content {
 		width: 350px;
 		height: calc(419px - 2 * 30px);
 
@@ -36,7 +36,8 @@
 
 
 .about__heading {
-	margin: 0 0 1.8rem 0;
+	margin: 0;
+	margin-bottom: 1.8rem;
 
 	font-family: Montserrat, sans-serif;
 	font-size: 1.8rem;

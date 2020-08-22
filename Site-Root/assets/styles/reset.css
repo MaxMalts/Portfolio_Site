@@ -1,0 +1,15 @@
+button {
+	display: block;
+	padding: 0;
+	border: none;
+	margin: 0;
+	background: none;
+	outline: none;
+	box-sizing: content-box;
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+		-ms-appearance: none;
+		 -o-appearance: none;
+			appearance: none;
+}

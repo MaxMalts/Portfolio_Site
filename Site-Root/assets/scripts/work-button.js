@@ -1,4 +1,5 @@
 var WorkButton_namespace = function () {
+
 	const transitionDuration = 800;  // in milliseconds
 
 
@@ -81,6 +82,7 @@ var WorkButton_namespace = function () {
 
 	button.status = ButtonStatus.loadMore;
 	button.addEventListener("click", OnButtonClick);
+	
 }
 
 WorkButton_namespace();

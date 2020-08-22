@@ -1,0 +1,44 @@
+.process {
+	width: 100%;
+	height: auto;
+
+	background-color: white;
+}
+
+.process__content {
+	width: calc(100% - 2 * 13.3%);
+	margin: 7.32% 13.3%;
+}
+
+@media (min-width: 1367px) {
+	.process__content {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+}
+
+.process__heading {
+	margin: 0;
+	margin-bottom: 2.5rem;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 1.875rem;
+	color: #191919;
+	text-align: center;
+}
+
+.process__paragraph {
+	width: 50.35%;
+	min-width: 400px;
+	margin: 0 auto;
+
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1rem;
+	color: #787878;
+}
+
+.process__video {
+	width: 100%;
+	margin: 0;
+	margin-top: 57px;
+}

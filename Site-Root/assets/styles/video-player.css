@@ -1,0 +1,95 @@
+.video-player {
+	width: 100%;
+	min-width: 150px;
+	min-height: 150px;
+	position: relative;
+}
+
+.video-player__video {
+	width: 100%;
+}
+
+
+/* Play Button */
+.video-player__play-btn {
+	width: 11.86%;
+	min-width: 100px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		 -o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+
+	opacity: 1;
+	-webkit-transition: all 500ms;
+	   -moz-transition: all 500ms;
+		-ms-transition: all 500ms;
+		 -o-transition: all 500ms;
+			transition: all 500ms;
+	
+	cursor: pointer;
+}
+
+.video-player__play-btn_play {
+	width: 100%;
+}
+
+.video-player:hover > .video-player__play-btn {
+	-webkit-filter: brightness(0.9);
+	   -moz-filter: brightness(0.9);
+		-ms-filter: brightness(0.9);
+		 -o-filter: brightness(0.9);
+			filter: brightness(0.9);
+}
+
+
+/* Mute Button */
+.video-player__mute-btn {
+	width: 4%;
+	min-width: 25px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	
+	opacity: 0;
+	-webkit-transition: opacity 600ms ease-in;
+	   -moz-transition: opacity 600ms ease-in;
+		-ms-transition: opacity 600ms ease-in;
+		 -o-transition: opacity 600ms ease-in;
+			transition: opacity 600ms ease-in;
+
+	-webkit-filter: contrast(0.3);
+	   -moz-filter: contrast(0.3);
+		-ms-filter: contrast(0.3);
+		 -o-filter: contrast(0.3);
+			filter: contrast(0.3);
+
+	cursor: pointer;
+}
+
+.video-player__mute-btn_unmuted, .video-player__mute-btn_muted {
+	width: 100%;
+}
+
+.video-player:hover > .video-player__mute-btn {
+	-webkit-transition: opacity 250ms ease-out;
+	   -moz-transition: opacity 250ms ease-out;
+		-ms-transition: opacity 250ms ease-out;
+		 -o-transition: opacity 250ms ease-out;
+			transition: opacity 250ms ease-out;
+	opacity: 1;
+}
+
+.video-player__mute-btn:hover {
+	-webkit-filter: contrast(1);
+	   -moz-filter: contrast(1);
+		-ms-filter: contrast(1);
+		 -o-filter: contrast(1);
+			filter: contrast(1);
+}

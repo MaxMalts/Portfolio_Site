@@ -6,7 +6,7 @@
 	background-color: #10c9c3;
 }
 
-.stats_content {
+.stats__content {
 	width: calc(4 * 235px + 3 * (20vw - 203px));
 	height: 48px;
 
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 1020px) {
-	.stats_content {
+	.stats__content {
 		width: calc(2 * 235px + (10vw + 50px));
 		height: 131px;
 

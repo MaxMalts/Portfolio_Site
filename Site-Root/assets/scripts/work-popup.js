@@ -85,5 +85,4 @@ var WorkPopup_namespace = function () {
 
 }
 
-
 WorkPopup_namespace();
