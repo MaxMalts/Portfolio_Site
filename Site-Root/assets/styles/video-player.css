@@ -1,18 +1,22 @@
 .video-player {
 	width: 100%;
+	height: auto;
 	min-width: 150px;
 	min-height: 150px;
 	position: relative;
 }
 
 .video-player__video {
+	display: block;
 	width: 100%;
+	height: auto;
 }
 
 
 /* Play Button */
 .video-player__play-btn {
 	width: 11.86%;
+	height: auto;
 	min-width: 100px;
 
 	position: absolute;
@@ -36,6 +40,7 @@
 
 .video-player__play-btn_play {
 	width: 100%;
+	height: auto;
 }
 
 .video-player:hover > .video-player__play-btn {
@@ -50,6 +55,7 @@
 /* Mute Button */
 .video-player__mute-btn {
 	width: 4%;
+	height: auto;
 	min-width: 25px;
 	position: absolute;
 	right: 0;
@@ -74,7 +80,9 @@
 }
 
 .video-player__mute-btn_unmuted, .video-player__mute-btn_muted {
+	display: block;
 	width: 100%;
+	height: auto;
 }
 
 .video-player:hover > .video-player__mute-btn {

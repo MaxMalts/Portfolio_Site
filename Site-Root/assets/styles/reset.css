@@ -6,6 +6,7 @@ button {
 	background: none;
 	outline: none;
 	box-sizing: content-box;
+	-webkit-tap-highlight-color: transparent;
 
 	-webkit-appearance: none;
 	   -moz-appearance: none;

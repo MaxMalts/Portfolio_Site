@@ -7,6 +7,7 @@
 
 .process__content {
 	width: calc(100% - 2 * 13.3%);
+	height: auto;
 	margin: 7.32% 13.3%;
 }
 
