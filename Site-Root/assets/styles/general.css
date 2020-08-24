@@ -18,3 +18,8 @@ body {
 	height: 100%;
 	margin: 0 auto;
 }
+
+.after-float {
+	height: 0;
+	clear: both;
+}

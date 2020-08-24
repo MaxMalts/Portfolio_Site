@@ -32,6 +32,17 @@
 	}
 }
 
+@media (max-width: 640px) {
+	.reviews {
+		height: 370px;
+	}
+
+	.reviews__item {
+		width: 85%;
+		margin-top: 50px;
+	}
+}
+
 .review__text {
 	width: 100%;
 	height: auto;

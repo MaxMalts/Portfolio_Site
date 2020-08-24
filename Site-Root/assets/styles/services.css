@@ -72,8 +72,3 @@
 	line-height: 1.5rem;
 	color: #787878;
 }
-
-.after-float {
-	height: 0;
-	clear: both;
-}
