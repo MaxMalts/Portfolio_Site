@@ -5,6 +5,10 @@
 	background-color: white;
 }
 
+.process__inner {
+	padding: 1px 0;
+}
+
 .process__content {
 	width: calc(100% - 2 * 13.3%);
 	height: auto;

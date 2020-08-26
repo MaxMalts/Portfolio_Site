@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;    /*Medium*/
+	src: url("fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: normal;    /*Regular*/
+	src: url("fonts/Nunito-Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: normal;    /*Regular*/
+	src: url("fonts/Work-Sans/static/WorkSans-Regular.ttf");
+}

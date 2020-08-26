@@ -1,0 +1,52 @@
+.message {
+	width: 100%;
+	height: auto;
+	min-height: calc(100vh - (100px + 90px + 2 * 6.95vw));
+
+	background-color: #f5f5f5;
+}
+
+@media (min-width: 1367px) {
+	.message {
+		min-height: calc(100vh - (100px + 90px + 2 * 60px));
+	}
+}
+
+@media (max-width: 970px) {
+	.message {
+		min-height: calc(100vh - (100px + 220px + 2 * 4vw));
+	}
+}
+
+.message__inner {
+	padding: 1px 0;
+}
+
+.message__container {
+	width: 70%;
+	height: auto;
+	margin: 20vh auto;
+}
+
+.message__heading {
+	width: 100%;
+	height: auto;
+	margin: 0;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 5rem;
+	text-align: center;
+	color: black;
+}
+
+.message__text {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	margin-top: 3rem;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	color: #787878;
+}
