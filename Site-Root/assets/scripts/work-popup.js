@@ -40,15 +40,14 @@ var WorkPopup_namespace = function () {
 
 
 	function ShowPopup(imgSrc) {
+		popupImage.setAttribute("src", "");
 		popupImage.setAttribute("src", imgSrc);
 
 		popup.style.display = "block";
 		CssAnimationIteration(popup);
 		CssAnimationIteration(container);
 
-		popupImage.addEventListener("load", function () {
-			FitImage(popupImage);
-		});
+		FitImage(popupImage);
 	}
 
 

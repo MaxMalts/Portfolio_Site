@@ -38,18 +38,77 @@ function CssAnimationIteration(element) {
 }
 
 
-function FitImage(image) {
-	var imgRatio = image.naturalWidth / image.naturalHeight;
-
-	var contStyle = getComputedStyle(image.parentElement, null);
+function FitMedia(media, mediaRatio) {
+	var contStyle = getComputedStyle(media.parentElement, null);
 	var contRatio = parseInt(contStyle.width, 10) / parseInt(contStyle.height, 10);
 
-	if (imgRatio > contRatio) {
-		image.style.width = "100%";
-		image.style.height = "auto";
+	if (mediaRatio > contRatio) {
+		media.style.width = "100%";
+		media.style.height = "auto";
 
 	} else {
-		image.style.width = "auto";
-		image.style.height = "100%";
+		media.style.width = "auto";
+		media.style.height = "100%";
+	}
+}
+
+function FitImage(image) {
+	var Process = function () {
+		var imgRatio = image.naturalWidth / image.naturalHeight;
+
+		FitMedia(image, imgRatio);
+	}
+
+	if (image.naturalWidth > 0) {
+		Process();
+
+	} else {
+		let interval = setInterval(function () {
+			console.log("there");
+			if (image.naturalWidth > 0) {
+				Process();
+				clearInterval(interval);
+				image.removeEventListener("error", ErrListener);
+				image.removeEventListener("load", LoadListener);
+			}
+		}, 500);
+
+		let LoadListener = function () {
+			Process();
+			clearInterval(interval);
+			image.removeEventListener("error", ErrListener);
+			image.removeEventListener("load", LoadListener);
+		}
+		image.addEventListener("load", LoadListener);
+
+		let ErrListener = function () {
+			clearInterval(interval);
+			image.removeEventListener("error", ErrListener);
+			image.removeEventListener("load", LoadListener);
+		}
+		image.addEventListener("error", ErrListener);
+	}
+
+}
+
+function FitVideo(video) {
+	const HAVE_METADATA = 1;
+
+	var Process = function () {
+		var videoRatio = video.videoWidth / video.videoHeight;
+
+		FitMedia(video, videoRatio);
+	}
+
+	if (video.readyState >= HAVE_METADATA) {
+		Process();
+	
+	} else {
+		let Listener = function () {
+			Process();
+			video.removeEventListener("loadedmetadata", Listener);
+		}
+
+		video.addEventListener("loadedmetadata", Listener);
 	}
 }
